@@ -1,6 +1,10 @@
 # Task-Manager-App
+An app to create & maintain a set of tasks/to-do list by a particular user
 
-Purely backend RESTful APIs.
-Frontend yet to be built.
+# APIs only (Frontend to be built)
+- Backend structure using Node.js, Express.js, Mongoose.
+- User Authentication using jsonwebtoken npm library.
+- Email sending using @sendgrid/mail npm library.
+- Test cases written using Jest & supertest
 
-Documentation coming up right after unit testing
+API Documentation coming up!!
