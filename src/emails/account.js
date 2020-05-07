@@ -10,14 +10,11 @@ const welcomeEmail = (email, name) => {
         from: 'shashankr6@gmail.com',
         subject: 'Welcome to this app which is never gonna release!',
         text: `Welcome, ${name}. How you doin'? ;)`
-    }
+    };
 
     sgMail
   .send(msg)
-  .then(() => {
 
-  })
-  .catch(err => console.log(err))
 }
 
 const accountDelete = (email, name) => {
@@ -26,13 +23,10 @@ const accountDelete = (email, name) => {
         from: 'shashankr6@gmail.com',
         subject: `I'll tell you all about it when I see you again :'(`,
         text: `${name}, It pains me to let you go. But, only if that what makes you happy. See you again, hopefully`
-    }
+    };
 
     sgMail.send(msg)
-    .then(() => {
 
-    })
-    .catch(err => console.log(err))
 }
 
 module.exports = {
