@@ -12,8 +12,16 @@ const welcomeEmail = (email, name) => {
         text: `Welcome, ${name}. How you doin'? ;)`
     };
 
+    
     sgMail
   .send(msg)
+  .then(() => {}, error => {
+    console.error(error);
+ 
+    if (error.response) {
+      console.error(error.response.body)
+    }
+  });
 
 }
 
